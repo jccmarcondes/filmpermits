@@ -1,10 +1,10 @@
 # Film Permits App ✔️
 
-#### Film Permits App 📱 built as a challenge to LeagueApps company and demonstrate the use of modern android architecture component with MVVM Architecture 🏗
+#### Film Permits App 📱 built as a challenge to LeagueApps company and shows the use of modern android architecture component with MVVM Architecture 🏗
 
 The App is using the [Film Permits Api] to searching film permits from New York city.
 
-### Build With 🏗️
+### Built With 🏗️
 - [Kotlin] - Programming language for Android
 - [Hilt-Dagger] - Standard library to incorporate Dagger dependency injection into an Android application.
 - [Retrofit] -  A type-safe HTTP client for Android and Java.
