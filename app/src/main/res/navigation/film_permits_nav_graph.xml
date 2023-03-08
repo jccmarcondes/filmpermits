@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/film_permits_nav_graph"
+    app:startDestination="@id/allFilmPermitsFragment">
+
+    <fragment
+        android:id="@+id/allFilmPermitsFragment"
+        android:name="com.jccmarcondes.filmpermits.ui.filmpermits.AllFilmPermitsFragment"
+        android:label="All Film Permits"
+        tools:layout="@layout/fragment_all_film_permits" >
+        <action
+            android:id="@+id/action_allFilmPermitsFragment_to_filmPermissionFragment"
+            app:destination="@id/filmPermissionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.jccmarcondes.filmpermits.ui.favorites.FavoriteFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_filmPermissionFragment"
+            app:destination="@id/filmPermissionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/searchCategoriesFragment"
+        android:name="com.jccmarcondes.filmpermits.ui.searchcategories.SearchCategoriesFragment"
+        android:label="Search Categories"
+        tools:layout="@layout/fragment_search_categories">
+        <action
+            android:id="@+id/action_searchCategoriesFragment_to_filmPermissionFragment"
+            app:destination="@id/filmPermissionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/filmPermissionFragment"
+        android:name="com.jccmarcondes.filmpermits.ui.itemfilmpermits.FilmPermissionFragment"
+        android:label="Film Permits"
+        tools:layout="@layout/fragment_film_permission" >
+        <argument
+            android:name="filmpermits"
+            app:argType="com.jccmarcondes.filmpermits.data.model.FilmPermission" />
+    </fragment>
+</navigation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/allFilmPermitsFragment"
+        android:title="Film Permits"
+        android:icon="@drawable/ic_all_permissions" />
+
+    <item android:id="@+id/favoriteFragment"
+        android:title="Favorites"
+        android:icon="@drawable/ic_favorite" />
+
+    <item android:id="@+id/searchCategoriesFragment"
+        android:title="Search Categories"
+        android:icon="@drawable/ic_search" />
+
+</menu>
