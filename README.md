@@ -35,4 +35,4 @@ The App is using the [Film Permits Api] to searching film permits from New York 
 
 This app uses [MVVM (Model View View-Model)] architecture.
 
-![alt text](https://github.com/KadirKuruca/NewsApp-MVVM-Hilt-Room-Retrofit/blob/master/mvvm_architecture.png?raw=true)
+![alt text](https://github.com/jccmarcondes/filmpermits/blob/main/mvvm_architecture.png?raw=true)
